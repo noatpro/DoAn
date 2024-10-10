@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bmi_navigation"
+    app:startDestination="@id/chiSoBmiFragment">
+
+    <fragment
+        android:id="@+id/chiSoBmiFragment"
+        android:name="com.nguyentoan.bepngon.ui.user.tienich.bmi.ChiSoBmiFragment"
+        android:label="fragment_chi_so_bmi"
+        tools:layout="@layout/fragment_chi_so_bmi" >
+        <action
+            android:id="@+id/action_chiSoBmiFragment_to_thapDinhDuongFragment"
+            app:destination="@id/thapDinhDuongFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/thapDinhDuongFragment"
+        android:name="com.nguyentoan.bepngon.ui.user.tienich.bmi.ThapDinhDuongFragment"
+        android:label="fragment_thap_dinh_duong"
+        tools:layout="@layout/fragment_thap_dinh_duong" >
+
+        <argument
+            android:name="data"
+            app:argType="integer"
+            android:defaultValue="0"/>
+
+    </fragment>
+
+
+</navigation>

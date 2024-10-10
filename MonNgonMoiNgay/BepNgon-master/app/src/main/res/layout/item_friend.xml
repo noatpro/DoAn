@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_50sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="@dimen/_6sdp">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/imgAvatar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_5sdp"
+        android:scaleType="centerCrop"
+        app:civ_border_color="#595959"
+        app:civ_border_width="2dp"
+        android:src="@drawable/ic_default_profile"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:weightSum="2.5">
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Nguyễn Văn Toàn"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/inter_600"/>
+
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:visibility="visible"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="#373434"
+            android:fontFamily="@font/inter_600"/>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imgMore"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_more_vert_24"
+        android:paddingVertical="@dimen/_8sdp"/>
+
+</LinearLayout>

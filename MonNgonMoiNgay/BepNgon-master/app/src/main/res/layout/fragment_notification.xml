@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.user.main.noti.NotificationFragment"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/toolBar"
+        android:orientation="horizontal"
+        layout="@layout/layout_tool_bar_main"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_5sdp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcyNotification"
+        android:paddingHorizontal="@dimen/_8sdp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        android:clipToPadding="false"
+        android:paddingBottom="30dp"
+        android:scrollbars="none"
+        tools:listitem="@layout/item_notification"
+        app:spanCount="1"/>
+
+</LinearLayout>

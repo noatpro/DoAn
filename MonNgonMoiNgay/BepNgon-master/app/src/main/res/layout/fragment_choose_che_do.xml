@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.user.tienich.chedoan.ChooseCheDoFragment"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:padding="12dp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_new_24" />
+
+        <TextView
+            android:id="@+id/txtFullName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Chế độ ăn"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/_12sdp">
+
+            <LinearLayout
+                android:id="@+id/llTreEm"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/bg_item_che_do_an">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingStart="@dimen/_6sdp"
+                    android:text="Trẻ em"
+                    android:fontFamily="@font/inter_500"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:gravity="center_vertical"/>
+
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/_4sdp"
+                    android:src="@drawable/ic_baseline_keyboard_arrow_right_24"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llNguoiLon"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/bg_item_che_do_an">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingStart="@dimen/_6sdp"
+                    android:text="Người lớn"
+                    android:fontFamily="@font/inter_500"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:gravity="center_vertical"/>
+
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/_4sdp"
+                    android:src="@drawable/ic_baseline_keyboard_arrow_right_24"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llNguoiGia"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/bg_item_che_do_an">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingStart="@dimen/_6sdp"
+                    android:text="Người già"
+                    android:fontFamily="@font/inter_500"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:gravity="center_vertical"/>
+
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/_4sdp"
+                    android:src="@drawable/ic_baseline_keyboard_arrow_right_24"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Người có tiền sử mắc bệnh:"
+                android:fontFamily="@font/inter_500"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"/>
+
+            <LinearLayout
+                android:id="@+id/llTimMach"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/bg_item_che_do_an">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingStart="@dimen/_6sdp"
+                    android:text="Bệnh tim mạch"
+                    android:fontFamily="@font/inter_500"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:gravity="center_vertical"/>
+
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/_4sdp"
+                    android:src="@drawable/ic_baseline_keyboard_arrow_right_24"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llTieuDuong"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/bg_item_che_do_an">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingStart="@dimen/_6sdp"
+                    android:text="Bệnh tiểu đường"
+                    android:fontFamily="@font/inter_500"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:gravity="center_vertical"/>
+
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/_4sdp"
+                    android:src="@drawable/ic_baseline_keyboard_arrow_right_24"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llHuyetApCao"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/bg_item_che_do_an">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingStart="@dimen/_6sdp"
+                    android:text="Bệnh huyết áp cao"
+                    android:fontFamily="@font/inter_500"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:gravity="center_vertical"/>
+
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/_4sdp"
+                    android:src="@drawable/ic_baseline_keyboard_arrow_right_24"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llHuyetApThap"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/bg_item_che_do_an">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingStart="@dimen/_6sdp"
+                    android:text="Bệnh huyết áp thấp"
+                    android:fontFamily="@font/inter_500"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:gravity="center_vertical"/>
+
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/_4sdp"
+                    android:src="@drawable/ic_baseline_keyboard_arrow_right_24"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llMauNhiemMo"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/bg_item_che_do_an">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingStart="@dimen/_6sdp"
+                    android:text="Bệnh máu nhiễm mỡ"
+                    android:fontFamily="@font/inter_500"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:gravity="center_vertical"/>
+
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/_4sdp"
+                    android:src="@drawable/ic_baseline_keyboard_arrow_right_24"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llGout"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/bg_item_che_do_an">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingStart="@dimen/_6sdp"
+                    android:text="Bệnh gout"
+                    android:fontFamily="@font/inter_500"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:gravity="center_vertical"/>
+
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/_4sdp"
+                    android:src="@drawable/ic_baseline_keyboard_arrow_right_24"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llViemDaDay"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/bg_item_che_do_an">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingStart="@dimen/_6sdp"
+                    android:text="Bệnh viêm dạ dày"
+                    android:fontFamily="@font/inter_500"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:gravity="center_vertical"/>
+
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/_4sdp"
+                    android:src="@drawable/ic_baseline_keyboard_arrow_right_24"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</LinearLayout>

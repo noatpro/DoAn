@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.sign.logout.LogUpFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingHorizontal="42dp"
+        android:layout_marginTop="@dimen/_70sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgApp"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo_splash"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đăng ký"
+            android:textColor="@color/color_primary"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginBottom="28dp"
+            android:textSize="36dp"/>
+
+        <EditText
+            android:id="@+id/edtTaiKhoan"
+            android:layout_width="match_parent"
+            android:hint="Tài khoản"
+            android:textSize="20dp"
+            android:layout_marginBottom="18dp"
+            android:textColor="@color/black"
+            android:paddingStart="@dimen/_6sdp"
+            android:background="@drawable/bg_edt_sign"
+            android:layout_height="@dimen/_40sdp"/>
+
+        <EditText
+            android:id="@+id/edtMatKhau"
+            android:layout_width="match_parent"
+            android:hint="Mật khẩu"
+            android:textSize="20dp"
+            android:layout_marginBottom="18dp"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:paddingStart="@dimen/_6sdp"
+            android:background="@drawable/bg_edt_sign"
+            android:layout_height="@dimen/_40sdp"/>
+
+        <EditText
+            android:id="@+id/edtXacNhan"
+            android:layout_width="match_parent"
+            android:hint="Xác nhận mật khẩu"
+            android:textSize="20dp"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:paddingStart="@dimen/_6sdp"
+            android:background="@drawable/bg_edt_sign"
+            android:layout_height="@dimen/_40sdp"/>
+
+        <TextView
+            android:id="@+id/llSignup"
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:background="@drawable/bg_btn_color_app"
+            android:gravity="center"
+            android:text="Đăng ký"
+            android:fontFamily="@font/inter_500"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15ssp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/_12sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bạn có tài khoản?"
+                android:fontFamily="@font/inter_400"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txtSignIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đăng nhập"
+                android:fontFamily="@font/inter_600"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/color_blue"
+                android:paddingVertical="@dimen/_5sdp"
+                android:paddingStart="@dimen/_5sdp"
+                android:paddingLeft="@dimen/_5sdp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

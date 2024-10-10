@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.user.tienich.policy.PolicyActivity">
+
+    <LinearLayout
+        android:id="@+id/llToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_new_24" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/inter_700"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/_8sdp"
+            android:text="Chính sách"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp" />
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llToolBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/_8sdp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_500"
+                android:text="Chúng tôi hiểu rằng điều quan trọng đối với Bếp ngon là phải trở thành nơi mà mọi người có thể cảm thấy tự tin để giao tiếp, nhưng chúng tôi cũng biết rằng cần phải xem trọng vai trò của bản thân trong việc ngăn chặn việc lạm dụng dịch vụ của mình. Đó là lý do Facebook phát triển bộ Tiêu chuẩn cộng đồng để cung cấp cho người dùng những nguyên tắc về nội dung được phép và không được phép trên Bếp ngon"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_500"
+                android:text="Dành cho nhà phát hành và người sáng tạo nội dung, chúng tôi tóm lược các nguyên tắc ở dưới đây nhằm chỉ ra những loại nội dung vi phạm rõ ràng Tiêu chuẩn cộng đồng và cả nội dung được xem là trên lằn ranh của Tiêu chuẩn cộng đồng để giảm thiểu tác hại có thể xảy ra đối với cộng đồng của mình."
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_700"
+                android:text="Nội dung có khả năng vi phạm Tiêu chuẩn cộng đồng của chúng tôi"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_500"
+                android:text="Nội dung mà hệ thống của chúng tôi dự đoán là có khả năng vi phạm Tiêu chuẩn cộng đồng, nhưng chưa được xác nhận là vi phạm, bao gồm nhưng không giới hạn ở:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_500"
+                android:text="Nội dung được tạo và phân phối bằng tài khoản giả
+Nội dung chứa từ/cụm từ đã được xác định là gây thù ghét
+Nội dung có thể khiêu khích hoặc tạo điều kiện cho tình trạng bạo lực nghiêm trọng
+Hành vi bắt nạt và quấy rối
+Spam
+Hình ảnh phản cảm
+Hoạt động tình dục và ảnh khỏa thân người lớn
+Tuyên bố sai sự thật về COVID-19, có khả năng trực tiếp tăng rủi ro tổn hại về thể chất
+Bài viết mua bán, giao dịch hoặc quảng cáo Hàng hóa hoặc dịch vụ bị hạn chế (theo định nghĩa trong Tiêu chuẩn cộng đồng của chúng tôi)"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_500"
+                android:text="Nội dung được tạo và phân phối bằng tài khoản giả
+Nội dung chứa từ/cụm từ đã được xác định là gây thù ghét
+Nội dung có thể khiêu khích hoặc tạo điều kiện cho tình trạng bạo lực nghiêm trọng
+Hành vi bắt nạt và quấy rối
+Spam
+Hình ảnh phản cảm
+Hoạt động tình dục và ảnh khỏa thân người lớn
+Tuyên bố sai sự thật về COVID-19, có khả năng trực tiếp tăng rủi ro tổn hại về thể chất
+Bài viết mua bán, giao dịch hoặc quảng cáo Hàng hóa hoặc dịch vụ bị hạn chế (theo định nghĩa trong Tiêu chuẩn cộng đồng của chúng tôi)"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_500"
+                android:text="Nội dung được tạo và phân phối bằng tài khoản giả
+Nội dung chứa từ/cụm từ đã được xác định là gây thù ghét
+Nội dung có thể khiêu khích hoặc tạo điều kiện cho tình trạng bạo lực nghiêm trọng
+Hành vi bắt nạt và quấy rối
+Spam
+Hình ảnh phản cảm
+Hoạt động tình dục và ảnh khỏa thân người lớn
+Tuyên bố sai sự thật về COVID-19, có khả năng trực tiếp tăng rủi ro tổn hại về thể chất
+Bài viết mua bán, giao dịch hoặc quảng cáo Hàng hóa hoặc dịch vụ bị hạn chế (theo định nghĩa trong Tiêu chuẩn cộng đồng của chúng tôi)"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"/>
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

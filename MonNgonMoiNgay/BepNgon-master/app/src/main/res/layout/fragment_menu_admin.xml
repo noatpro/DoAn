@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    tools:context=".ui.user.main.menu.MenuFragment"
+    android:background="#F6F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolBar"
+            android:orientation="horizontal"
+            layout="@layout/layout_tool_bar_main"/>
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_marginTop="@dimen/_25sdp"
+            android:id="@+id/userAvatar"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            app:civ_border_color="@color/color_primary"
+            app:civ_border_width="3dp"
+            android:src="@drawable/ic_default_profile"/>
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trường"
+            android:textSize="@dimen/_18sdp"
+            android:paddingVertical="@dimen/_2sdp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/inter_700"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_12sdp"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_5sdp"
+            android:layout_marginVertical="@dimen/_12sdp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="#EAE7E7"/>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/llProfile"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginHorizontal="@dimen/_16sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_account_setup"
+                android:padding="@dimen/_8sdp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Thiết lập tài khoản"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/_12ssp"
+                android:fontFamily="@font/inter_600"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="#EAE7E7"/>
+
+        <LinearLayout
+            android:id="@+id/llChangeProfile"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginHorizontal="@dimen/_16sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_more_lock"
+                android:padding="@dimen/_8sdp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Chỉnh sửa thông tin"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/_12ssp"
+                android:fontFamily="@font/inter_600"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="#EAE7E7"/>
+
+        <LinearLayout
+            android:id="@+id/llChangePassword"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginHorizontal="@dimen/_16sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_more_lock"
+                android:padding="@dimen/_8sdp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Đổi mật khẩu"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/_12ssp"
+                android:fontFamily="@font/inter_600"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:gravity="center"
+            android:layout_marginHorizontal="@dimen/_16sdp"
+            android:text="Đăng xuất"
+            android:layout_marginVertical="@dimen/_12sdp"
+            android:background="@drawable/bg_btn_ll_profile"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            android:fontFamily="@font/inter_600"
+            android:backgroundTint="#686463"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

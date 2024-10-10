@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.user.tienich.bmi.ThapDinhDuongFragment"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:padding="12dp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_new_24" />
+
+        <TextView
+            android:id="@+id/txtFullName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Chỉ số BMI"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imgSearchChat"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:padding="12dp"
+            android:visibility="gone"
+            android:src="@drawable/ic_search" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:id="@+id/viewThap1"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:background="#f2f2f2">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="25dp"
+                        android:textColor="#000"
+                        android:layout_centerInParent="true"
+                        android:text="Bạn bị gầy mất rồi, phải tăng cân cho đẹp thôi" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="380dp"
+                    android:src="@drawable/thin"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="- Ăn uống đúng giờ và không được bỏ bữa nhất là bữa sáng.">
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:layout_marginTop="10dp"
+                    android:text="- Ngoài 3 bữa chính thì nên ăn thêm 1 vài bữa phụ.">
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:layout_marginTop="10dp"
+                    android:text="- Nên ăn nhiều thục phẩm giàu dinh dưỡng như thịt cá trứng sữa, bên cạnh đó cần bổ sung thêm rau và hoa quả tươi">
+                </TextView>
+                <pl.droidsonroids.gif.GifTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/anhdonggay"
+                    android:layout_marginLeft="60dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="   "/>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/viewThap2"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:text="Bạn cần ăn đầy đủ nhé" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="380dp"
+                    android:src="@drawable/thaptt"
+                    android:layout_margin="5dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="- Ăn uống lành mạnh, đa dạng các loại thực phẩm." />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000"
+                    android:text="- Tích cực vận động, thể dục để tăng cường sức khỏe." />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000"
+                    android:text="- Tránh xa bia, rượu, thuốc lá và các chất kích thích." />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"/>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/viewThap3"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:text="Bạn bị béo mất rồi, phải giảm cân cho đẹp thôi" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="380dp"
+                    android:src="@drawable/beo"
+                    android:layout_margin="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="- Dù người béo cần giảm lượng thức ăn, nhưng cần đảm bảo nguyên tắc đủ lượng protein cần thiết cho cơ thể." />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000"
+                    android:layout_marginLeft="5dp"
+                    android:text="- Bạn cần lựa chọn các thực phẩm giàu protein và ít lipid như: Thịt ít mỡ, tôm, cua, cá, giò nạc, sữa đậu nành, pho mai gầy, trứng, đậu đỗ." />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#000"
+                    android:text="- Nên ăn cá nhiều hơn thịt." />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#000"
+                    android:text="- Ưu tiên ăn các món luộc, hấp, nướng ít dầu mỡ. " />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#000"
+                    android:text="- Nếu muốn uống sữa thì nên uống sữa dành cho người thừa cân béo phì hoặc sữa tách béo không đường, sữa giàu canxi, sữa chua ít hoặc không đường..." />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#000"
+                    android:text="- Kết hợp với chế độ ăn khoa học là các hoạt động thể dục." />
+
+                <pl.droidsonroids.gif.GifTextView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="90dp"
+                    android:background="@drawable/anhdongbeo"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"/>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

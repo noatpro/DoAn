@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/color_line_bg"
+    android:layout_height="match_parent"
+    tools:context=".ui.personalpage.PersonalPageActivity"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolBar"
+        layout="@layout/layout_tool_bar"/>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingHorizontal="@dimen/_8sdp"
+                    android:orientation="vertical">
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:layout_marginTop="@dimen/_25sdp"
+                        android:id="@+id/userAvatar"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop"
+                        app:civ_border_color="#595959"
+                        app:civ_border_width="3dp"
+                        android:src="@drawable/ic_default_profile"/>
+
+                    <TextView
+                        android:id="@+id/userName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Trường"
+                        android:textSize="@dimen/_18sdp"
+                        android:paddingVertical="@dimen/_2sdp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/inter_700"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Thông tin cá nhân"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/inter_600"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="@dimen/_8sdp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_8sdp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:textColor="#2C2C2C"
+                            android:textSize="@dimen/_12sdp"
+                            android:fontFamily="@font/inter_500"
+                            android:layout_height="match_parent"
+                            android:text="Giới tính"/>
+
+                        <TextView
+                            android:id="@+id/txtGender"
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="match_parent"
+                            android:text="Nguyễn Văn Toàn"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            android:fontFamily="@font/inter_500"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_8sdp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:textColor="#2C2C2C"
+                            android:textSize="@dimen/_12sdp"
+                            android:fontFamily="@font/inter_500"
+                            android:layout_height="match_parent"
+                            android:text="Ngày sinh"/>
+
+                        <TextView
+                            android:id="@+id/txtBirthDay"
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="match_parent"
+                            android:text="Nguyễn Văn Toàn"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            android:fontFamily="@font/inter_500"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_8sdp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:textColor="#2C2C2C"
+                            android:textSize="@dimen/_12sdp"
+                            android:fontFamily="@font/inter_500"
+                            android:layout_height="match_parent"
+                            android:text="Gmail"/>
+
+                        <TextView
+                            android:id="@+id/txtGmail"
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="match_parent"
+                            android:text="Nguyễn Văn Toàn"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            android:fontFamily="@font/inter_500"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_8sdp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:textColor="#2C2C2C"
+                            android:textSize="@dimen/_12sdp"
+                            android:fontFamily="@font/inter_500"
+                            android:layout_height="match_parent"
+                            android:text="Điện thoại"/>
+
+                        <TextView
+                            android:id="@+id/txtPhone"
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="match_parent"
+                            android:text="Nguyễn Văn Toàn"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            android:fontFamily="@font/inter_500"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_20sdp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:textColor="#2C2C2C"
+                            android:textSize="@dimen/_12sdp"
+                            android:fontFamily="@font/inter_500"
+                            android:layout_height="match_parent"
+                            android:text="Địa chỉ"/>
+
+                        <TextView
+                            android:id="@+id/txtAddress"
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="match_parent"
+                            android:text="Nguyễn Văn Toàn"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            android:fontFamily="@font/inter_500"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/btnChange"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:gravity="center"
+                        android:layout_marginHorizontal="@dimen/_16sdp"
+                        android:text="Chỉnh sửa thông tin"
+                        android:layout_marginVertical="@dimen/_12sdp"
+                        android:background="@drawable/bg_btn_change_infor"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12ssp"
+                        android:fontFamily="@font/inter_600"/>
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:id="@+id/rcyBaiDang"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    android:clipToPadding="false"
+                    android:paddingBottom="30dp"
+                    android:scrollbars="none"
+                    tools:listitem="@layout/item_bai_viet"
+                    app:spanCount="1"/>
+
+            </LinearLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

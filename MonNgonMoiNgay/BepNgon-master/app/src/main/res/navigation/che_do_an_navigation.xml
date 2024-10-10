@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/che_do_an_navigation.xml"
+    app:startDestination="@id/chooseCheDoFragment">
+
+    <fragment
+        android:id="@+id/chooseCheDoFragment"
+        android:name="com.nguyentoan.bepngon.ui.user.tienich.chedoan.ChooseCheDoFragment"
+        android:label="fragment_choose_che_do"
+        tools:layout="@layout/fragment_choose_che_do" >
+        <action
+            android:id="@+id/action_chooseCheDoFragment_to_showCheDoAnFragment"
+            app:destination="@id/showCheDoAnFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/showCheDoAnFragment"
+        android:name="com.nguyentoan.bepngon.ui.user.tienich.chedoan.ShowCheDoAnFragment"
+        android:label="fragment_show_che_do_an"
+        tools:layout="@layout/fragment_show_che_do_an" >
+
+        <argument app:argType="integer"
+            android:name="data"
+            android:defaultValue="0"/>
+
+    </fragment>
+
+
+</navigation>

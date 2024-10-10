@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           android:layout_margin="10dp"
+           android:background="#f2f2f2">
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="25dp"
+               android:textStyle="bold"
+               android:text="Đối với trẻ sơ sinh (Độ tuổi 2)"
+               android:textSize="15dp">
+
+           </TextView>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:textSize="15dp"
+               android:text="- Đối với bé nhỏ hơn 6 tháng tuổi, chúng ta chưa nên cho bé ăn dặm vì hệ tiêu hóa còn yếu, ở thời điểm này chúng ta chỉ nên cho bé ăn hoàn toàn bằng sữa mẹ."
+               ></TextView>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="- Đối với bé từ 6 tháng tuổi trở lên, ngoài sữa mẹ bé cần được ăn dặm để bổ sung thêm các thực phẩm khác cung cấp đầy đủ chất dinh dưỡng cho nhu cầu phát triển thể chất và trí tuệ của trẻ."
+               android:layout_marginTop="10dp"
+               android:textSize="15dp"/>
+           <ImageView
+               android:layout_width="200dp"
+               android:layout_height="200dp"
+               android:layout_marginLeft="90dp"
+               android:src="@drawable/andam"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="25dp"
+               android:textStyle="bold"
+               android:text="Đối với trẻ từ 2 đến 15 tuổi"
+               android:textSize="15dp"></TextView>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="15dp"
+               android:layout_marginTop="10dp"
+               android:text="- Độ tuổi này bé cần cung cấp đầy đủ chất dinh dưỡng để phát triển khỏe mạnh, mẹ cần bổ sung những chất dinh dưỡng thiết yếu và ngăn chứng biếng ăn của bé, cho bé tập thể dục đều đặn."></TextView>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="15dp"
+               android:layout_marginTop="10dp"
+               android:layout_marginLeft="10dp"
+               android:text="+ Bổ sung đạm, chất béo omega-3 từ cá."/>
+           <ImageView
+               android:layout_width="200dp"
+               android:src="@drawable/chatdamm"
+               android:layout_height="200dp"
+               android:layout_marginLeft="90dp"/>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="15dp"
+               android:layout_marginTop="10dp"
+               android:layout_marginLeft="10dp"
+               android:text="+Bổ sung thực phẩm chứa lợi khuẩn và rau củ quả vì nó giúp trẻ phát triển não bộ, miễn dịch."/>
+           <ImageView
+               android:layout_width="200dp"
+               android:src="@drawable/proby"
+               android:layout_height="200dp"
+               android:layout_marginLeft="90dp"/>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="15dp"
+               android:layout_marginTop="10dp"
+               android:layout_marginLeft="10dp"
+               android:text="+Nhóm  dầu có chất béo bão hòa thấp như như dầu oliu, dầu hướng dương.."/>
+           <ImageView
+               android:layout_width="200dp"
+               android:src="@drawable/huongduong"
+               android:layout_height="200dp"
+               android:layout_marginLeft="90dp"/>
+       </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

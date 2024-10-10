@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sign_navigation"
+    app:startDestination="@id/loginFragment">
+
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.nguyentoan.bepngon.ui.sign.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_logUpFragment"
+            app:destination="@id/logUpFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/logUpFragment"
+        android:name="com.nguyentoan.bepngon.ui.sign.logout.LogUpFragment"
+        android:label="fragment_log_up"
+        tools:layout="@layout/fragment_log_up" >
+        <action
+            android:id="@+id/action_logUpFragment_to_createInfoFragment"
+            app:destination="@id/createInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createInfoFragment"
+        android:name="com.nguyentoan.bepngon.ui.sign.createinfo.CreateInfoFragment"
+        android:label="fragment_create_info"
+        tools:layout="@layout/fragment_create_info" />
+
+
+</navigation>

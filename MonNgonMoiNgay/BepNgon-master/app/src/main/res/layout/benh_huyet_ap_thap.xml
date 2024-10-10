@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#f2f2f2"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bạn đang tìm hiểu chế độ ăn hợp lý cho người mắc bệnh huyết áp thấp ?"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_margin="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cao huyết áp là một bệnh thuộc các tạng can, thận, tỳ, bị mất điều hoà mà gây ra bệnh. Ngoài ra còn yếu tố đàm thấp hay gặp ở những người bệnh tạng béo và cholesterol cao.Khi bị cao huyết áp, ngoài thuốc ra, việc lựa chọn và duy trì một chế độ ăn thích hợp có ý nghĩa đặc biệt quan trọng."
+                android:textSize="18dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:text="Người mắc bệnh huyết áp thấp nên ăn những thực phẩm sau:"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                >
+                <LinearLayout
+                    android:layout_margin="10dp"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:orientation="vertical"
+                    android:weightSum="6">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:src="@drawable/fe"
+
+                        android:layout_weight="4"></ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:text="các loại thức ăn chứa nhiều sắt"
+                        android:layout_marginLeft="30dp"
+                        android:textStyle="bold"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_margin="10dp"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    android:weightSum="5">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:src="@drawable/beef"
+
+                        android:layout_weight="4"></ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="các loại thịt nạc"
+                        android:layout_marginLeft="10dp"
+                        android:textStyle="bold"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                >
+                <LinearLayout
+                    android:layout_marginRight="5dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+
+                    android:weightSum="5">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:src="@drawable/ga"
+
+                        android:layout_weight="4"></ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="thịt gà"
+                        android:layout_marginLeft="45dp"
+                        android:textStyle="bold"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginRight="5dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    android:weightSum="5">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:src="@drawable/tea"
+
+                        android:layout_weight="4"></ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="trà đặc"
+                        android:layout_marginLeft="10dp"
+                        android:textStyle="bold"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginRight="5dp"
+                    android:layout_width="90dp"
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    android:weightSum="5">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:src="@drawable/fish"
+
+                        android:layout_weight="4"></ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="cá"
+                        android:layout_marginLeft="40dp"
+                        android:textStyle="bold"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:text="Người mắc  bệnh huyết áp thấp nên hạn chế:"/>
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:layout_marginRight="5dp"
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:orientation="vertical"
+                    android:weightSum="6">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:src="@drawable/salt"
+
+                        android:layout_weight="4"></ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:text="muối"
+                        android:layout_marginLeft="10dp"
+                        android:textStyle="bold"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginRight="5dp"
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:orientation="vertical"
+                    android:weightSum="6">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:src="@drawable/oil"
+
+                        android:layout_weight="4"></ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:text="mỡ động vật"
+                        android:layout_marginLeft="10dp"
+                        android:textStyle="bold"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout><LinearLayout
+                android:layout_marginRight="5dp"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:orientation="vertical"
+                android:weightSum="6">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:src="@drawable/beer"
+
+                    android:layout_weight="4"></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="2"
+                    android:text="các chất kích thích"
+                    android:textSize="15dp"
+                    android:textStyle="bold"></TextView>
+            </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:text="   "/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

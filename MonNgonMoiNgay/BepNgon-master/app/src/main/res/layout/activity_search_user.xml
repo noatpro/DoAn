@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.search.SearchActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/color_line_bg">
+
+        <include
+            android:id="@+id/toolBar"
+            android:orientation="horizontal"
+            layout="@layout/layout_tool_bar"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:background="@color/white">
+
+            <EditText
+                android:id="@+id/edtSearch"
+                android:layout_width="0dp"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:layout_marginVertical="@dimen/_6sdp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="Tìm kiếm"
+                android:singleLine="true"
+                android:paddingEnd="@dimen/_8sdp"
+                android:paddingStart="@dimen/_12sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+                android:fontFamily="@font/inter_400"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_ban_co_mon_gi_nao" />
+
+            <ImageView
+                android:id="@+id/imgAvt"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="match_parent"
+                android:padding="@dimen/_6sdp"
+                android:src="@drawable/ic_search"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imgEmpty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="@dimen/_5sdp"
+                android:id="@+id/rcyHistory"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                android:clipToPadding="false"
+                android:paddingBottom="30dp"
+                android:scrollbars="none"
+                app:spanCount="1"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="@dimen/_5sdp"
+                android:id="@+id/rcySearch"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                android:clipToPadding="false"
+                android:paddingBottom="30dp"
+                android:scrollbars="none"
+                app:spanCount="1"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcyKetQua"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:clipToPadding="false"
+                    android:paddingBottom="30dp"
+                    android:scrollbars="none"
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    app:spanCount="1" />
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

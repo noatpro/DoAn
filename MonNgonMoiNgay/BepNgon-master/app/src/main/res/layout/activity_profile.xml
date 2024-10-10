@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.sign.createinfo.CreateInfoFragment">
+
+    <LinearLayout
+        android:id="@+id/llToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_new_24"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/inter_700"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/_8sdp"
+            android:text="Chỉnh sửa thông tin"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp" />
+
+
+        <TextView
+            android:id="@+id/txtSave"
+            android:layout_width="@dimen/_50sdp"
+            android:text="Lưu"
+            android:background="@drawable/bg_btn_follow"
+            android:textColor="@color/white"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:fontFamily="@font/inter_500"
+            android:layout_marginVertical="@dimen/_4sdp"
+            android:layout_marginEnd="@dimen/_6sdp"/>
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llToolBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_marginTop="@dimen/_22sdp">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/imgAvt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_default_profile"
+                    app:civ_border_color="@color/color_primary"
+                    app:civ_border_width="3dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:fontFamily="@font/inter_400"
+                android:paddingVertical="@dimen/_2sdp"
+                android:text="Tên hiển thị"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+            <EditText
+                android:id="@+id/edtName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/bg_edt_input"
+                android:gravity="center_vertical"
+                android:hint="Nhập tên"
+                android:paddingHorizontal="@dimen/_8sdp"
+                android:textColor="@color/black"
+                android:textSize="22dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:fontFamily="@font/inter_400"
+                android:paddingVertical="@dimen/_2sdp"
+                android:text="Ngày sinh"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/edtBirthDay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/bg_edt_input"
+                android:gravity="center_vertical"
+                android:hint="Chọn ngày sinh"
+                android:paddingHorizontal="@dimen/_8sdp"
+                android:textColor="@color/black"
+                android:textSize="22dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:fontFamily="@font/inter_400"
+                android:paddingVertical="@dimen/_2sdp"
+                android:text="Giới tính"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:background="@drawable/bg_edt_input"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/_30sdp">
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbNam"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/black"
+                        android:checked="true"
+                        android:text="Nam"
+                        android:textColor="@color/black" />
+
+                    <RadioButton
+                        android:id="@+id/rbNu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/black"
+                        android:text="Nữ"
+                        android:textColor="@color/black" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:fontFamily="@font/inter_400"
+                android:paddingVertical="@dimen/_2sdp"
+                android:text="Gmail"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+            <EditText
+                android:id="@+id/edtGmail"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:background="@drawable/bg_edt_input"
+                android:gravity="center_vertical"
+                android:hint="Nhập Gmail"
+                android:paddingHorizontal="@dimen/_8sdp"
+                android:textColor="@color/black"
+                android:textSize="22dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:fontFamily="@font/inter_400"
+                android:paddingVertical="@dimen/_2sdp"
+                android:text="Điện thoại"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+            <EditText
+                android:id="@+id/edtPhone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:background="@drawable/bg_edt_input"
+                android:gravity="center_vertical"
+                android:hint="Nhập số điện thoại"
+                android:paddingHorizontal="@dimen/_8sdp"
+                android:textColor="@color/black"
+                android:textSize="22dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:fontFamily="@font/inter_400"
+                android:paddingVertical="@dimen/_2sdp"
+                android:text="Địa chỉ"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+            <EditText
+                android:id="@+id/edtAddress"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/bg_edt_input"
+                android:gravity="center_vertical"
+                android:hint="Nhập địa chỉ"
+                android:paddingHorizontal="@dimen/_8sdp"
+                android:textColor="@color/black"
+                android:textSize="22dp" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <ProgressBar
+        android:id="@+id/prgLoad"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="@dimen/_65sdp"
+        android:layout_height="@dimen/_65sdp"
+        android:visibility="gone"
+        android:indeterminateDrawable="@drawable/progress_circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

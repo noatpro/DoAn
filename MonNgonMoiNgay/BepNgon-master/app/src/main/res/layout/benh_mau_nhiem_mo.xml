@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bạn đang tìm hiểu chế độ ăn hợp lý cho người mắc máu nhiễm mỡ ?"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_margin="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lượng mỡ trong máu tăng cao liên quan chặt chẽ với chế độ ăn uống. Cách điều trị đơn giản và hiệu quả nhất là điều chỉnh ngay trong bữa ăn hàng ngày của gia đình. Những người bị mỡ trong máu cao cần biết kiểm soát ăn uống một cách nghiêm khắc."
+                android:textSize="18dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:text="Người mắc bệnh máu nhiễm mỡ nên ăn những thực phẩm sau:"/>
+
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                >
+                <LinearLayout
+                    android:layout_marginRight="5dp"
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:orientation="vertical"
+
+                    android:weightSum="6">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:src="@drawable/soy"
+
+                        android:layout_weight="4"></ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:text="các sản phẩm của đậu nành"
+                        android:layout_marginLeft="0dp"
+                        android:textStyle="bold"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginRight="5dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    android:weightSum="5">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:src="@drawable/ginger"
+
+                        android:layout_weight="4"></ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="gừng"
+                        android:layout_marginLeft="30dp"
+                        android:textStyle="bold"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginRight="5dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    android:weightSum="5">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:src="@drawable/fish"
+
+                        android:layout_weight="4"></ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="cá"
+                        android:layout_marginLeft="40dp"
+                        android:textStyle="bold"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:text="Người mắc bệnh máu nhiễm mỡ nên hạn chế:"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                >
+                <LinearLayout
+                    android:layout_marginRight="5dp"
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:orientation="vertical"
+                    android:weightSum="6">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:src="@drawable/salt"
+
+                        android:layout_weight="4"></ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:text="muối"
+                        android:layout_marginLeft="10dp"
+                        android:textStyle="bold"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginRight="5dp"
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:orientation="vertical"
+                    android:weightSum="6">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:src="@drawable/oil"
+
+                        android:layout_weight="4"></ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:text="mỡ động vật, dầu"
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout><LinearLayout
+                android:layout_marginRight="5dp"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:orientation="vertical"
+                android:weightSum="6">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:src="@drawable/cheese"
+
+                    android:layout_weight="4"></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_weight="2"
+                    android:text="bơ"
+                    android:textSize="15dp"
+                    android:textStyle="bold"></TextView>
+            </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:text="   "/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

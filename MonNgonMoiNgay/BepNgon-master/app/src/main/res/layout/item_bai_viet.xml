@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:id="@+id/viewRoot">
+
+    <LinearLayout
+        android:id="@+id/layoutTop"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="@dimen/_45sdp"
+        android:orientation="horizontal">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/imgAvatar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_5sdp"
+            android:scaleType="centerCrop"
+            app:civ_border_color="#595959"
+            app:civ_border_width="2dp"
+            android:src="@drawable/ic_default_profile"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:weightSum="2.5">
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Nguyễn Văn Toàn"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/inter_600"/>
+
+            <TextView
+                android:id="@+id/txtTime"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.8"
+                android:text="17h:33p"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="#373434"
+                android:fontFamily="@font/inter_600"/>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/imgMore"
+            android:layout_width="42dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_more_vert_24"
+            android:paddingVertical="@dimen/_8sdp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtTag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="okla"
+            android:fontFamily="@font/inter_600"
+            android:paddingBottom="@dimen/_4sdp"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/black"
+            android:paddingHorizontal="@dimen/_8sdp"/>
+
+        <TextView
+            android:id="@+id/txtContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="okla"
+            android:fontFamily="@font/inter_400"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/black"
+            android:paddingHorizontal="@dimen/_8sdp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutImage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_320sdp"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/image01"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@color/black"/>
+
+        <LinearLayout
+            android:id="@+id/llImage02"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:layout_marginStart="@dimen/_2sdp">
+
+            <ImageView
+                android:id="@+id/image02"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:scaleType="centerCrop"
+                android:src="@color/black"/>
+
+            <ImageView
+                android:id="@+id/image03"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:src="@color/black"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#918F8F"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginHorizontal="@dimen/_8sdp"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginBottom="@dimen/_4sdp">
+
+        <RelativeLayout
+            android:id="@+id/rlReaction"
+            android:layout_marginStart="8dp"
+            android:layout_width="38dp"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_6sdp">
+
+            <ImageView
+                android:id="@+id/imgHeart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_heart" />
+
+            <ImageView
+                android:id="@+id/imgHeartFill"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_heart_fill"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/numberLike"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            android:fontFamily="@font/inter_400"
+            android:gravity="center_vertical"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/imgComment"
+            android:layout_width="38dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_comment"
+            android:padding="@dimen/_6sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Bình luận"
+            android:paddingEnd="@dimen/_12sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            android:fontFamily="@font/inter_400"
+            android:gravity="center_vertical"/>
+
+    </LinearLayout>
+
+</LinearLayout>

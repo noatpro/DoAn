@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#f2f2f2">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:text="Với người già, nguy cơ bệnh tim mạch, đái tháo đường, máu nhiễm mỡ... rất cao nên cần quan tâm nhiều hơn trong chế độ ăn uống, sinh hoạt."
+                android:textSize="15dp"
+                ></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- Dùng món luộc thay nướng."
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                ></TextView>
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/luoc"
+                android:layout_marginLeft="90dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- Giảm lượng thịt và thay bằng cá."
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                ></TextView>
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/canhca"
+                android:layout_marginLeft="90dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- Nên chọn các thức ăn có nguồn gốc thực vật."
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                ></TextView>
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/anchay"
+                android:layout_marginLeft="90dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- Giảm lượng đường, mỡ và hạn chế dùng muối."
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="   "/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name" translatable="false">Bếp Ngon</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="click_back">Nhấn lần nữa để thoát!</string>
+    <string name="title_welcome_sign">Chào bạn, để sử dụng ứng dụng, bạn cần đăng nhập tài khoản Gmail để có thể sử dung. Hãy bấn nút đăng nhập phía dưới để đăng nhập.</string>
+    <string name="channel_name">Notifications Bếp Ngon</string>
+    <string name="channel_desc">Notifications Bếp Ngon</string>
+</resources>

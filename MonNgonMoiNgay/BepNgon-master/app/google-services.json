@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "81329065574",
+    "firebase_url": "https://bepngon-61524-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "bepngon-61524",
+    "storage_bucket": "bepngon-61524.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:81329065574:android:4474e5f7f8af75e11e67a7",
+        "android_client_info": {
+          "package_name": "com.nguyentoan.bepngon"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKrO3HAhH8alVxOHR7AalYfZBKTmRRsCg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

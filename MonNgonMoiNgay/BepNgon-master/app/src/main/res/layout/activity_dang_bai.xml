@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ui.baidang.DangBaiActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="@dimen/_5sdp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_new_24"
+            app:tint="@color/black" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Tạo bài viết"
+            android:fontFamily="@font/inter_500"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"/>
+
+
+        <TextView
+            android:id="@+id/txtDangBai"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="@dimen/_12sdp"
+            android:text="Đăng"
+            android:fontFamily="@font/inter_500"
+            android:layout_marginEnd="@dimen/_6sdp"
+            android:layout_marginVertical="@dimen/_5sdp"
+            android:background="@drawable/bg_btn_dang_post"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            android:gravity="center"
+            app:tint="@color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutTop"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="@dimen/_38sdp"
+        android:orientation="horizontal">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/imgAvatar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_5sdp"
+            android:scaleType="centerCrop"
+            app:civ_border_color="@color/color_primary"
+            app:civ_border_width="2dp"
+            android:src="@drawable/ic_default_profile"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:weightSum="1.5">
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Nguyễn Văn Toàn"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/inter_600"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toTopOf="@+id/llImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        android:background="@color/white">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingHorizontal="@dimen/_4sdp"
+                android:orientation="vertical">
+                <EditText
+                    android:id="@+id/edtTag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Tiêu đề"
+                    android:background="@color/white"/>
+
+                <View
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#5E5E5E"/>
+
+                <EditText
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:id="@+id/edtContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:hint="Nội dung"
+                    android:background="@color/white"
+                    android:gravity="top"/>
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <ImageView
+            android:id="@+id/imgAddImage"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:layout_marginEnd="@dimen/_18sdp"
+            android:layout_marginBottom="@dimen/_18sdp"
+            android:src="@drawable/ic_add_image_100"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llImage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:paddingTop="@dimen/_3sdp"
+            android:id="@+id/rcyImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            android:orientation="horizontal"
+            app:spanCount="1"
+            tools:listitem="@layout/item_image_post"/>
+
+    </LinearLayout>
+
+</LinearLayout>

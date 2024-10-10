@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    tools:context=".ui.user.main.menu.MenuFragment"
+    android:background="#F6F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolBar"
+            android:orientation="horizontal"
+            layout="@layout/layout_tool_bar_main"/>
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_marginTop="@dimen/_25sdp"
+            android:id="@+id/userAvatar"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            app:civ_border_color="@color/color_primary"
+            app:civ_border_width="3dp"
+            android:src="@drawable/ic_default_profile"/>
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trường"
+            android:textSize="@dimen/_18sdp"
+            android:paddingVertical="@dimen/_2sdp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/inter_700"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:id="@+id/llPersonalPage"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_36sdp"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/_12sdp"
+            android:layout_marginHorizontal="@dimen/_16sdp"
+            android:background="@drawable/bg_btn_ll_profile"
+            android:backgroundTint="#F6673A"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Trang cá nhân"
+                android:gravity="center"
+                android:fontFamily="@font/inter_600"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_12sdp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_marginHorizontal="@dimen/_16sdp">
+
+            <LinearLayout
+                android:id="@+id/llSaved"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:background="@drawable/bg_btn_ll_profile"
+                android:paddingVertical="@dimen/_4sdp"
+                android:paddingStart="@dimen/_12sdp"
+                android:paddingEnd="@dimen/_4sdp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_29sdp"
+                    android:layout_weight="1"
+                    android:layout_gravity="left"
+                    android:layout_height="0dp"
+                    android:src="@drawable/ic_bookmark_ribbon"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_18sdp"
+                    android:text="Đã lưu"
+                    android:fontFamily="@font/inter_500"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llBmi"
+                android:visibility="invisible"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:background="@drawable/bg_btn_ll_profile"
+                android:paddingVertical="@dimen/_4sdp"
+                android:paddingStart="@dimen/_12sdp"
+                android:paddingEnd="@dimen/_4sdp"
+                android:orientation="vertical">
+
+                <ImageView
+                android:layout_width="@dimen/_29sdp"
+                android:layout_weight="1"
+                android:layout_gravity="left"
+                android:layout_height="0dp"
+                android:src="@drawable/ic_bmi"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_18sdp"
+                    android:text="Chỉ số BMI"
+                    android:fontFamily="@font/inter_500"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:layout_marginHorizontal="@dimen/_16sdp">
+
+            <LinearLayout
+                android:id="@+id/llCheDoAn"
+
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:background="@drawable/bg_btn_ll_profile"
+                android:paddingVertical="@dimen/_4sdp"
+                android:paddingStart="@dimen/_12sdp"
+                android:paddingEnd="@dimen/_4sdp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_29sdp"
+                    android:layout_weight="1"
+                    android:layout_gravity="left"
+                    android:layout_height="0dp"
+                    android:src="@drawable/eat_mode"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_18sdp"
+                    android:text="Chế độ ăn"
+                    android:fontFamily="@font/inter_500"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llRandom"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:background="@drawable/bg_btn_ll_profile"
+                android:paddingVertical="@dimen/_4sdp"
+                android:paddingStart="@dimen/_12sdp"
+                android:paddingEnd="@dimen/_4sdp"
+                android:visibility="invisible"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_29sdp"
+                    android:layout_weight="1"
+                    android:layout_gravity="left"
+                    android:layout_height="0dp"
+                    android:src="@drawable/ic_shuffle"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_18sdp"
+                    android:text="Random"
+                    android:fontFamily="@font/inter_500"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_5sdp"
+            android:layout_marginVertical="@dimen/_12sdp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="#EAE7E7"/>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/llProfile"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginHorizontal="@dimen/_16sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_account_setup"
+                android:padding="@dimen/_8sdp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Thiết lập tài khoản"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/_12ssp"
+                android:fontFamily="@font/inter_600"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="#EAE7E7"/>
+
+        <LinearLayout
+            android:id="@+id/llChangePassword"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginHorizontal="@dimen/_16sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_more_lock"
+                android:padding="@dimen/_8sdp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Đổi mật khẩu"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/_12ssp"
+                android:fontFamily="@font/inter_600"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="#EAE7E7"
+            android:visibility="visible"/>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/llHelp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginHorizontal="@dimen/_16sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_question"
+                android:padding="@dimen/_8sdp"/>
+
+            <TextView
+                android:layout_width="0dp"
+
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Trợ giúp"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/_12ssp"
+                android:fontFamily="@font/inter_600"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="#EAE7E7"
+            android:visibility="visible"/>
+
+        <LinearLayout
+            android:id="@+id/llPolicy"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginHorizontal="@dimen/_16sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_policy"
+                android:padding="@dimen/_8sdp"
+                app:tint="@color/black" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Chính sách"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/_12ssp"
+                android:fontFamily="@font/inter_600"/>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="#EAE7E7"/>
+
+        <LinearLayout
+            android:id="@+id/llFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginHorizontal="@dimen/_16sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_info_menu"
+                android:padding="@dimen/_8sdp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Đóng góp ý kiến"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/_12ssp"
+                android:fontFamily="@font/inter_600"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:gravity="center"
+            android:layout_marginHorizontal="@dimen/_16sdp"
+            android:text="Đăng xuất"
+            android:layout_marginVertical="@dimen/_12sdp"
+            android:background="@drawable/bg_btn_ll_profile"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            android:fontFamily="@font/inter_600"
+            android:backgroundTint="#686463"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

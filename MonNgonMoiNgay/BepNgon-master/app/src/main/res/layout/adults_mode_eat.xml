@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#f2f2f2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Theo Hội đồng Nâng cao Sức khỏe (Health Promotion Board), một chế độ dinh dưỡng phù hợp với người trưởng thành phải tuân theo những nguyên tắc sau:"
+                android:textSize="15dp"
+                ></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- Giàu chất xơ"
+                android:textSize="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                ></TextView>
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="90dp"
+                android:src="@drawable/rau"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="- Bổ sung vitamin và khoáng chất (từ quả tươi và các loại hạt)"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/quatuoi"
+                    android:layout_marginLeft="30dp"/>
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/hat"
+                    android:layout_toRightOf="@+id/img1"
+                    android:layout_marginLeft="30dp"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- Hạn chế chất béo, choresterol, đường, muối."
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                ></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="   "/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
